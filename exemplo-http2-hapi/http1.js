@@ -11,7 +11,7 @@ const options = {
     cert: fs.readFileSync('certificates/server.crt')
 };
 server.connection({ 
-    host: 'localhost',
+    address: '0.0.0.0',
     port: 4000,
     tls: options
 
@@ -41,4 +41,4 @@ server.register(inert, () => {
     }]);
 })
 
-server.start((err) => log(`Server running at: ${server.info.uri}`));
+server.start((err) => log(`Server running at:  `));
