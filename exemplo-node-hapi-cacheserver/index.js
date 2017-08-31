@@ -18,7 +18,7 @@ const app = new Hapi.Server({
         }
     ]
 })
-app.connection({ port: 6000, host: 'localhost' })
+app.connection({ port: 7000, host: 'localhost' })
 
 const findAsync = (next) => heroesDb.findAsync().then(res => next(null, res))
 app.method('findAsync', findAsync, {
@@ -37,9 +37,9 @@ app.route([{
             const lastModified = cached ? new Date(cached.stored) : new Date();
             log(`ultimo cache: ${lastModified.toLocaleString()}`)
             if (err) return reply('deu rum' + err)
-            return reply(res).header('last-modified', lastModified.toUTCString());
+            return reply(res)//.header('last-modified', lastModified.toUTCString());
         })
     }
 }])
 
-app.start((err) => log(`hapi running at ${app.info.uri}`))
+app.start((err) => log(`hapi running at ${app.info.uri}, ${err || ""}`))
