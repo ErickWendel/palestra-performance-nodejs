@@ -28,27 +28,7 @@ app.method('findAsync', findAsync, {
         generateTimeout: 100
     }
 });
-
-
-
-// app.route({
-//     path: '/hapi/{ttl?}',
-//     method: 'GET',
-//     handler: function (request, reply) {
-
-//         const response = reply({ be: 'hapi' });
-//         if (request.params.ttl) {
-//             response.ttl(request.params.ttl);
-//         }
-//     },
-//     config: {
-//         cache: {
-//             expiresIn: 30 * 1000,
-//             privacy: 'private'
-//         }
-//     }
-// });
-
+ 
 app.route([{
     path: '/',
     method: 'GET',
