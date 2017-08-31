@@ -1,3 +1,3 @@
-##Comands
+## Comands
 
-> siege -c 100 -b -r 1 http://localhost:3000
+> siege -c 5 -b -r 215 http://localhost:4000
