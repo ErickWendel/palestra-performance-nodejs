@@ -1,0 +1,21 @@
+{
+  "name": "exemplo-http2-hapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "seed": "node seed.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "catbox-redis": "^3.0.2",
+    "faker": "^4.1.0",
+    "hapi": "^16.5.2",
+    "mongojs": "^2.4.1",
+    "winston": "^2.3.1"
+  }
+}
