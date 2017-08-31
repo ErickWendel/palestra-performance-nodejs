@@ -1,0 +1,188 @@
+Statistical profiling result from isolate-0x41ef5e0-v8.log, (151 ticks, 13 unaccounted, 0 excluded).
+
+ [Shared libraries]:
+   ticks  total  nonlib   name
+      2    1.3%          /lib/x86_64-linux-gnu/ld-2.23.so
+
+ [JavaScript]:
+   ticks  total  nonlib   name
+      1    0.7%    0.7%  Function: ~fs.openSync fs.js:647:23
+      1    0.7%    0.7%  Function: ~NativeModule.require bootstrap_node.js:481:34
+      1    0.7%    0.7%  Function: ~<anonymous> fs.js:1:11
+
+ [C++]:
+   ticks  total  nonlib   name
+     46   30.5%   30.9%  node::(anonymous namespace)::ContextifyScript::New(v8::FunctionCallbackInfo<v8::Value> const&)
+     16   10.6%   10.7%  write
+     15    9.9%   10.1%  syscall
+      5    3.3%    3.4%  node::Binding(v8::FunctionCallbackInfo<v8::Value> const&)
+      4    2.6%    2.7%  v8::internal::Deserializer::ReadData(v8::internal::Object**, v8::internal::Object**, int, unsigned char*)
+      3    2.0%    2.0%  v8::internal::ParserBase<v8::internal::Parser>::ParseAssignmentExpression(bool, bool*)
+      2    1.3%    1.3%  v8::internal::Scope::Snapshot::Snapshot(v8::internal::Scope*)
+      2    1.3%    1.3%  v8::internal::ParserBase<v8::internal::Parser>::ParseBlock(v8::internal::ZoneList<v8::internal::AstRawString const*>*, bool*)
+      2    1.3%    1.3%  v8::internal::HashTable<v8::internal::StringTable, v8::internal::StringTableShape, v8::internal::HashTableKey*>::FindEntry(v8::internal::Isolate*, v8::internal::HashTableKey*)
+      2    1.3%    1.3%  cfree
+      1    0.7%    0.7%  void v8::internal::BodyDescriptorBase::IterateBodyImpl<v8::internal::StaticScavengeVisitor>(v8::internal::Heap*, v8::internal::HeapObject*, int, int)
+      1    0.7%    0.7%  void node::StreamBase::JSMethod<node::StreamWrap, &(int node::StreamBase::WriteString<(node::encoding)1>(v8::FunctionCallbackInfo<v8::Value> const&))>(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.7%    0.7%  v8::internal::interpreter::BytecodeGenerator::VisitNoStackOverflowCheck(v8::internal::AstNode*)
+      1    0.7%    0.7%  v8::internal::interpreter::BytecodeGenerator::VisitCall(v8::internal::Call*)
+      1    0.7%    0.7%  v8::internal::StringCharacterStream::Reset(v8::internal::String*, int)
+      1    0.7%    0.7%  v8::internal::String::CalculateLineEnds(v8::internal::Handle<v8::internal::String>, bool)
+      1    0.7%    0.7%  v8::internal::Statement::IsJump() const
+      1    0.7%    0.7%  v8::internal::SharedFunctionInfo::SetScript(v8::internal::Handle<v8::internal::SharedFunctionInfo>, v8::internal::Handle<v8::internal::Object>)
+      1    0.7%    0.7%  v8::internal::Script::GetPositionInfo(int, v8::internal::Script::PositionInfo*, v8::internal::Script::OffsetFlag) const
+      1    0.7%    0.7%  v8::internal::Scanner::ScanIdentifierOrKeyword()
+      1    0.7%    0.7%  v8::internal::Scanner::Scan()
+      1    0.7%    0.7%  v8::internal::Runtime_KeyedGetProperty(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.7%    0.7%  v8::internal::ParserBase<v8::internal::PreParser>::ParsePrimaryExpression(bool*, bool*)
+      1    0.7%    0.7%  v8::internal::ParserBase<v8::internal::Parser>::ParseUnaryExpression(bool*)
+      1    0.7%    0.7%  v8::internal::Parser::ParseFunction(v8::internal::Isolate*, v8::internal::ParseInfo*)
+      1    0.7%    0.7%  v8::internal::Parser::ParseFunction(v8::internal::AstRawString const*, int, v8::internal::FunctionKind, v8::internal::FunctionLiteral::FunctionType, v8::internal::DeclarationScope*, int*, int*, bool*, int*, bool*)
+      1    0.7%    0.7%  v8::internal::LookupIterator::WriteDataValue(v8::internal::Handle<v8::internal::Object>, bool)
+      1    0.7%    0.7%  v8::internal::List<int, v8::internal::FreeStoreAllocationPolicy>::Add(int const&, v8::internal::FreeStoreAllocationPolicy) [clone .isra.709]
+      1    0.7%    0.7%  v8::internal::JSObjectWalkVisitor<v8::internal::AllocationSiteUsageContext>::StructureWalk(v8::internal::Handle<v8::internal::JSObject>)
+      1    0.7%    0.7%  v8::internal::HeapObjectIterator::Next()
+      1    0.7%    0.7%  v8::internal::Heap::AllocateWeakCell(v8::internal::HeapObject*)
+      1    0.7%    0.7%  v8::internal::Heap::AllocateFixedArray(int, v8::internal::PretenureFlag)
+      1    0.7%    0.7%  v8::internal::HGraphBuilder::CreateGraph()
+      1    0.7%    0.7%  v8::internal::FullCodeGenerator::StackValueContext::Plug(v8::internal::Variable*) const
+      1    0.7%    0.7%  v8::internal::FlexibleBodyVisitor<v8::internal::StaticScavengeVisitor, v8::internal::JSFunction::BodyDescriptorImpl<(v8::internal::JSFunction::BodyVisitingPolicy)0>, int>::Visit(v8::internal::Map*, v8::internal::HeapObject*)
+      1    0.7%    0.7%  v8::internal::ExpressionClassifier<v8::internal::ParserTypes<v8::internal::Parser> >::Accumulate(v8::internal::ExpressionClassifier<v8::internal::ParserTypes<v8::internal::Parser> >*, unsigned int, bool)
+      1    0.7%    0.7%  v8::internal::Builtin_ArrayBufferConstructor_ConstructStub(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.7%    0.7%  v8::internal::(anonymous namespace)::GetLazyCode(v8::internal::Handle<v8::internal::JSFunction>)
+      1    0.7%    0.7%  std::ios_base::~ios_base()
+      1    0.7%    0.7%  node::crypto::PBKDF2(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.7%    0.7%  fflush
+      1    0.7%    0.7%  brk
+      1    0.7%    0.7%  bool v8::internal::JSObject::UpdateAllocationSite<(v8::internal::AllocationSiteUpdateMode)0>(v8::internal::Handle<v8::internal::JSObject>, v8::internal::ElementsKind)
+      1    0.7%    0.7%  __libc_malloc
+      1    0.7%    0.7%  __GI___pthread_mutex_lock
+      1    0.7%    0.7%  _IO_default_xsputn
+
+ [Summary]:
+   ticks  total  nonlib   name
+      3    2.0%    2.0%  JavaScript
+    133   88.1%   89.3%  C++
+      2    1.3%    1.3%  GC
+      2    1.3%          Shared libraries
+     13    8.6%          Unaccounted
+
+ [C++ entry points]:
+   ticks    cpp   total   name
+     53   51.0%   35.1%  v8::internal::Builtin_HandleApiCall(int, v8::internal::Object**, v8::internal::Isolate*)
+     35   33.7%   23.2%  v8::internal::Runtime_CompileLazy(int, v8::internal::Object**, v8::internal::Isolate*)
+      3    2.9%    2.0%  v8::internal::Runtime_NewObject(int, v8::internal::Object**, v8::internal::Isolate*)
+      2    1.9%    1.3%  v8::internal::Runtime_StoreIC_Miss(int, v8::internal::Object**, v8::internal::Isolate*)
+      2    1.9%    1.3%  v8::internal::Runtime_KeyedStoreIC_Miss(int, v8::internal::Object**, v8::internal::Isolate*)
+      2    1.9%    1.3%  v8::internal::Runtime_BinaryOpIC_Miss(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    1.0%    0.7%  v8::internal::Runtime_ToBooleanIC_Miss(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    1.0%    0.7%  v8::internal::Runtime_LoadGlobalIC_Miss(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    1.0%    0.7%  v8::internal::Runtime_KeyedGetProperty(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    1.0%    0.7%  v8::internal::Runtime_CreateObjectLiteral(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    1.0%    0.7%  v8::internal::Builtin_NumberPrototypeToString(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    1.0%    0.7%  v8::internal::Builtin_JsonParse(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    1.0%    0.7%  v8::internal::Builtin_ArrayBufferConstructor_ConstructStub(int, v8::internal::Object**, v8::internal::Isolate*)
+
+ [Bottom up (heavy) profile]:
+  Note: percentage shows a share of a particular caller in the total
+  amount of its parent calls.
+  Callers occupying less than 2.0% are not shown.
+
+   ticks parent  name
+     46   30.5%  node::(anonymous namespace)::ContextifyScript::New(v8::FunctionCallbackInfo<v8::Value> const&)
+     46  100.0%    v8::internal::Builtin_HandleApiCall(int, v8::internal::Object**, v8::internal::Isolate*)
+     45   97.8%      Function: ~runInThisContext bootstrap_node.js:465:28
+     45  100.0%        Function: ~NativeModule.compile bootstrap_node.js:551:44
+     45  100.0%          Function: ~NativeModule.require bootstrap_node.js:481:34
+     10   22.2%            Function: ~startup bootstrap_node.js:12:19
+      5   11.1%            Function: ~<anonymous> stream.js:1:11
+      4    8.9%            Function: ~<anonymous> util.js:1:11
+      4    8.9%            Function: ~<anonymous> tty.js:1:11
+      4    8.9%            Function: ~<anonymous> module.js:1:11
+      3    6.7%            Function: ~setupGlobalVariables bootstrap_node.js:215:32
+      3    6.7%            Function: ~<anonymous> timers.js:1:11
+      2    4.4%            Function: ~setupGlobalTimeouts bootstrap_node.js:260:31
+      2    4.4%            Function: ~<anonymous> fs.js:1:11
+      1    2.2%            Function: ~installInspectorConsole bootstrap_node.js:287:35
+      1    2.2%            Function: ~createWritableStdioStream internal/process/stdio.js:151:35
+      1    2.2%            Function: ~Module._load module.js:432:24
+      1    2.2%            Function: ~<anonymous> internal/util.js:1:11
+      1    2.2%            Function: ~<anonymous> internal/url.js:1:11
+      1    2.2%            Function: ~<anonymous> crypto.js:1:11
+      1    2.2%            Function: ~<anonymous> buffer.js:1:11
+      1    2.2%            Function: ~<anonymous> _stream_readable.js:1:11
+      1    2.2%      Function: ~createScript vm.js:73:22
+      1  100.0%        Function: ~runInThisContext vm.js:115:26
+      1  100.0%          Function: ~Module._compile module.js:526:37
+      1  100.0%            Function: ~Module._extensions..js module.js:578:37
+
+     16   10.6%  write
+     11   68.8%    v8::internal::Runtime_CompileLazy(int, v8::internal::Object**, v8::internal::Isolate*)
+      2   18.2%      Function: ~Socket._writeGeneric net.js:702:42
+      2  100.0%        Function: ~Socket._write net.js:779:35
+      2  100.0%          Function: ~doWrite _stream_writable.js:363:17
+      2  100.0%            Function: ~writeOrBuffer _stream_writable.js:323:23
+      1    9.1%      Function: ~nextTick internal/process/next_tick.js:232:20
+      1  100.0%        Function: ~onwrite _stream_writable.js:398:17
+      1  100.0%          Function: ~Socket._writeGeneric net.js:702:42
+      1  100.0%            Function: ~Socket._write net.js:779:35
+      1    9.1%      Function: ~log console.js:103:37
+      1  100.0%        node::inspector::(anonymous namespace)::InspectorConsoleCall(v8::FunctionCallbackInfo<v8::Value> const&)
+      1  100.0%          Function: ~hash /home/erickwendel/Documents/palestras/performance-nodejs/exemplo-profilling/index.js:9:29
+      1    9.1%      Function: ~formatValue util.js:279:21
+      1  100.0%        Function: ~inspect util.js:169:17
+      1  100.0%          Function: ~exports.format util.js:64:26
+      1  100.0%            Function: ~log console.js:103:37
+      1    9.1%      Function: ~allocate buffer.js:237:18
+      1  100.0%        Function: ~Buffer.allocUnsafe buffer.js:208:30
+      1  100.0%          Function: ~tryCreateBuffer fs.js:526:25
+      1  100.0%            Function: ~fs.readFileSync fs.js:550:27
+      1    9.1%      Function: ~afterWrite _stream_writable.js:426:20
+      1  100.0%        Function: ~_combinedTickCallback internal/process/next_tick.js:93:33
+      1  100.0%          Function: ~_tickCallback internal/process/next_tick.js:133:25
+      1    9.1%      Function: ~_tickCallback internal/process/next_tick.js:133:25
+      1    9.1%      Function: ~_addListener events.js:232:22
+      1  100.0%        Function: ~addListener events.js:297:58
+      1  100.0%          Function: ~getStderr internal/process/stdio.js:34:21
+      1  100.0%            Function: ~<anonymous> console.js:1:11
+      1    9.1%      Function: ~Socket._write net.js:779:35
+      1  100.0%        Function: ~doWrite _stream_writable.js:363:17
+      1  100.0%          Function: ~writeOrBuffer _stream_writable.js:323:23
+      1  100.0%            Function: ~Writable.write _stream_writable.js:248:36
+      1    9.1%      Function: ~Module._load module.js:432:24
+      1  100.0%        Function: ~Module.runMain module.js:603:26
+      1  100.0%          Function: ~startup bootstrap_node.js:12:19
+      1  100.0%            Function: ~<anonymous> bootstrap_node.js:10:10
+      1    6.3%    v8::internal::Runtime_BinaryOpIC_Miss(int, v8::internal::Object**, v8::internal::Isolate*)
+      1  100.0%      Function: ~formatNumber util.js:583:22
+      1  100.0%        Function: ~formatPrimitive util.js:591:25
+      1  100.0%          Function: ~formatValue util.js:279:21
+      1  100.0%            Function: ~inspect util.js:169:17
+      1    6.3%    Function: ~setupInit internal/process/next_tick.js:221:21
+      1  100.0%      Function: ~nextTick internal/process/next_tick.js:232:20
+      1  100.0%        Function: ~onwrite _stream_writable.js:398:17
+      1  100.0%          Function: ~Socket._writeGeneric net.js:702:42
+      1  100.0%            Function: ~Socket._write net.js:779:35
+
+     15    9.9%  syscall
+
+     13    8.6%  UNKNOWN
+
+      5    3.3%  node::Binding(v8::FunctionCallbackInfo<v8::Value> const&)
+      5  100.0%    v8::internal::Builtin_HandleApiCall(int, v8::internal::Object**, v8::internal::Isolate*)
+      2   40.0%      Function: ~<anonymous> crypto.js:1:11
+      2  100.0%        Function: ~NativeModule.compile bootstrap_node.js:551:44
+      2  100.0%          Function: ~NativeModule.require bootstrap_node.js:481:34
+      2  100.0%            Function: ~Module._load module.js:432:24
+      1   20.0%      Function: ~<anonymous> net.js:1:11
+      1  100.0%        Function: ~NativeModule.compile bootstrap_node.js:551:44
+      1  100.0%          Function: ~NativeModule.require bootstrap_node.js:481:34
+      1  100.0%            Function: ~<anonymous> tty.js:1:11
+      1   20.0%      Function: ~<anonymous> buffer.js:1:11
+      1  100.0%        Function: ~NativeModule.compile bootstrap_node.js:551:44
+      1  100.0%          Function: ~NativeModule.require bootstrap_node.js:481:34
+      1  100.0%            Function: ~<anonymous> util.js:1:11
+      1   20.0%      Function: ~<anonymous> bootstrap_node.js:10:10
+
+      4    2.6%  v8::internal::Deserializer::ReadData(v8::internal::Object**, v8::internal::Object**, int, unsigned char*)
+
